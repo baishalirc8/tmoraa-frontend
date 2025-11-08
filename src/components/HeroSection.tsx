@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function HeroSection() {
     return (
-        <div className="relative h-screen bg-[url('/hero-bg.png')] bg-size-[150%_150%] bg-top bg-no-repeat">
+        <div className="relative h-fit bg-[url('/hero-bg.png')] bg-size-[150%_150%] bg-top bg-no-repeat">
             <Appbar />
             <div className="grid grid-cols-2 justify-items-center">
                 <div className='justify-self-start ml-20 mt-20 space-y-2'>
@@ -26,6 +26,7 @@ export default function HeroSection() {
                 <Image src="/notion-logo.png" alt="Notion" width={100} height={0} className="grayscale hover:grayscale-0 transition duration-300" />
                 <Image src="/slack-logo.png" alt="Slack" width={100} height={0} className="grayscale hover:grayscale-0 transition duration-300" />
             </div>
+            <div className='h-10'></div>
         </div>
     )
 }
