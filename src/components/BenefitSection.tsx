@@ -10,7 +10,7 @@ export default function BenefitSection() {
             <img src="/card-bg-top.png" alt='' className='absolute right-[47.5%] top-[7%] h-20 w-21 object-cover' />
             <img src="/card-bg-bottom.png" alt='' className='absolute right-[10.5%] top-[78.5%] h-20 w-20 object-cover' />
             <div className='flex'>
-                <div className='pt-40 pb-32 pl-48 w-fit'>
+                <div className='pt-40 pb-30 pl-48 w-fit'>
                     <h2 className='text-4xl font-semibold'>Key Benefits</h2>
                     <List className='mt-10' imageSrc='/blt-one.png'>Unified dashboard for all operational data</List>
                     <List className='mt-4' imageSrc='/blt-one.png'>AI-driven forecasting and smart recommendations</List>
