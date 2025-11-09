@@ -10,7 +10,7 @@ export default function ProblemSolutionSection() {
             <div className='mt-20 flex justify-center items-center'>
                 <h2 className='text-4xl font-semibold'>Problem & Solution</h2>
             </div>
-            <div className='relative h-fit'>
+            <div className='relative h-screen '>
                 <img src="/problem-bg.png" alt='' className='absolute left-0 top-10 h-96 w-[52%] z-10 object-cover' />
                 <img src="/solution-bg.png" alt='' className='absolute right-0 top-14 h-96 w-[60%] z-20 object-cover' />
                 <img src="/blob-tear.png" alt='' className='absolute right-30 top-0 h-36 w-36 z-30 object-cover' />
@@ -30,7 +30,7 @@ export default function ProblemSolutionSection() {
                     <List className='mt-3'>Reduces waste and optimizes labour costs</List>
                     <List className='mt-3'>Automatically generates insights and reports from your data</List>
                 </div>
-                <div className='absolute top-136 w-screen z-40'>
+                <div className='absolute top-136 w-full z-40'>
                     <h2 className='text-4xl font-semibold flex justify-center'>Seamlessly Connect Your Entire</h2>
                     <h2 className='text-4xl font-semibold flex justify-center mt-1'>Tech Stack</h2>
                     <p className='mt-5 w-[80%] mx-auto text-center '>Tmoraa is designed for maximum compatibility and minimal friction. We provide robust, secure integrations with the leading technology providers across the F&B ecosystem to ensure a complete and accurate view of your business. Connect your data and start receiving unified, real-time insights immediately.</p>
