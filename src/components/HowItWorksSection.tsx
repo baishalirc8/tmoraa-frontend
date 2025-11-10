@@ -8,7 +8,7 @@ export default function HowItWorksSection() {
             <img src="/mission-card-top.png" alt='' className='absolute left-30 top-[60%] h-20 w-20 object-cover' />
             <img src="/mission-card-bottom.png" alt='' className='absolute right-30 top-[90%] h-20 w-20 object-cover' />
             <div className='pt-20 mb-15 flex justify-center items-center'>
-                <h2 className='text-4xl font-semibold'>How It Works</h2>
+                <h2 className='text-4xl font-semibold'>Workflow</h2>
             </div>
             <div className='flex justify-center items-center space-x-3 mx-20'>
                 <FeatureCard iconImg='/how-icon-1.png' description='Connect your existing POS, inventory, reservation system, and review tools.' />

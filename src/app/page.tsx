@@ -19,7 +19,7 @@ export default function Home() {
       <AboutSection/>
       <UspSection/>
       <HowTmoraaWorkSection/>
-      <WhyYoullLoveTmoraaSection/>
+      {/* <WhyYoullLoveTmoraaSection/> */}
     </>
   )
 }
