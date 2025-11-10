@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection'
 import HowItWorksSection from '@/components/HowItWorksSection'
 import ProblemSolutionSection from '@/components/ProblemSolutionSection'
 import UspSection from '@/components/UspSection'
+import WhyYoullLoveTmoraaSection from '@/components/WhyYoullLoveTmoraaSection'
 import React from 'react'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HowItWorksSection />
       <AboutSection/>
       <UspSection/>
+      <WhyYoullLoveTmoraaSection/>
     </>
   )
 }
