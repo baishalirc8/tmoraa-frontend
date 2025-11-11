@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 export default function UspSection() {
   return (
-    <div className="my-10">
+    <div id="features" className="my-10">
       <div className="mb-10 flex justify-center items-center">
         <h2 className="text-4xl font-semibold">What Makes Us Different</h2>
       </div>

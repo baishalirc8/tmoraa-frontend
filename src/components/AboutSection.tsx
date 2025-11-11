@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutSection() {
     return (
         <>
-            <div className='relative mt-5 bg-[#778EFF]/[0.14] h-fit text-foreground'>
+            <div id='aboutUs' className='relative mt-5 bg-[#778EFF]/[0.14] h-fit text-foreground'>
                 <img src="/blob-tear.png" alt='' className='absolute left-15 top-15 h-28 w-28 z-30 object-cover' />
                 <img src="/card-bg-top.png" alt='' className='absolute right-[46.5%] top-12 h-20 w-21 object-cover' />
                 <img src="/card-bg-bottom.png" alt='' className='absolute right-[8%] bottom-16 h-20 w-20 object-cover' />

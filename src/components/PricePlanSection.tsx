@@ -3,7 +3,7 @@ import PricingCard from "./PricingCard";
 
 export default function PricePlanSection() {
   return (
-    <div className="mt-8 mb-5 relative h-fit">
+    <div id="pricing" className="mt-8 mb-5 relative h-fit">
       <img src="/price-plan-bg.png" alt="" className="absolute -top-40 -z-50" />
       <div className="flex justify-center items-center">
         <h2 className="text-4xl font-semibold">

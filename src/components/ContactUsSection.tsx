@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 export default function ContactUsSection() {
     return (
-        <div className='relative'>
+        <div id='contactUs' className='relative'>
             <img src="/footer-bg.png" alt="" className='absolute bottom-0 left-0 -z-10' />
             <div className="py-16 flex justify-center">
                 <div

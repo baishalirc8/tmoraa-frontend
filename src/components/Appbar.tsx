@@ -7,6 +7,14 @@ import LinkButton from './LinkButton'
 import Image from 'next/image'
 
 export default function Appbar() {
+
+    const handleScroll = (targetId: string) => {
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div className="flex items-center justify-between p-5">
             {/* Logo */}
@@ -14,12 +22,24 @@ export default function Appbar() {
 
             {/* Navigation Links */}
             <div className="flex items-center space-x-8">
-                <LinkButton>Home</LinkButton>
-                <LinkButton>About Us</LinkButton>
-                <LinkButton>Features</LinkButton>
-                <LinkButton>Pricing</LinkButton>
-                <LinkButton>FAQ</LinkButton>
-                <LinkButton>Contact Us</LinkButton>
+                <LinkButton onClick={() => {
+                    handleScroll("home")
+                }}>Home</LinkButton>
+                <LinkButton onClick={() => {
+                    handleScroll("aboutUs")
+                }} >About Us</LinkButton>
+                <LinkButton onClick={() => {
+                    handleScroll("features")
+                }}>Features</LinkButton>
+                <LinkButton onClick={() => {
+                    handleScroll("pricing")
+                }}>Pricing</LinkButton>
+                <LinkButton onClick={() => {
+                    handleScroll("faq")
+                }}>FAQ</LinkButton>
+                <LinkButton onClick={() => {
+                    handleScroll("contactUs")
+                }}>Contact Us</LinkButton>
             </div>
 
             {/* Action Buttons */}
