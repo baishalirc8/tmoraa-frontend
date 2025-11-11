@@ -5,7 +5,6 @@ import Image from 'next/image'
 export default function HeroSection() {
     return (
         <div id='home' className="relative h-fit bg-[url('/hero-bg.png')] bg-size-[150%_150%] bg-top bg-no-repeat">
-            <Appbar />
             <div className="grid grid-cols-2 justify-items-center">
                 <div className='justify-self-start ml-32 mt-20 space-y-2'>
                     <div className='flex space-x-2' >

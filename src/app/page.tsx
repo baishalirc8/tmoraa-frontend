@@ -1,4 +1,5 @@
 import AboutSection from '@/components/AboutSection'
+import Appbar from '@/components/Appbar'
 import BenefitSection from '@/components/BenefitSection'
 import BookDemoSection from '@/components/BookDemoSection'
 import ContactUsSection from '@/components/ContactUsSection'
@@ -17,6 +18,7 @@ import React from 'react'
 export default function Home() {
   return (
     <>
+      <Appbar />
       <HeroSection />
       <ProblemSolutionSection />
       <BenefitSection />
