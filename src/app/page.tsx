@@ -1,6 +1,7 @@
 import AboutSection from '@/components/AboutSection'
 import BenefitSection from '@/components/BenefitSection'
 import FaqSection from '@/components/FaqSection'
+import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
 import HowItWorksSection from '@/components/HowItWorksSection'
 import HowTmoraaWorkSection from '@/components/HowTmoraaWorkSection'
@@ -17,11 +18,12 @@ export default function Home() {
       <ProblemSolutionSection />
       <BenefitSection />
       <HowItWorksSection />
-      <AboutSection/>
-      <UspSection/>
-      <HowTmoraaWorkSection/>
+      <AboutSection />
+      <UspSection />
+      <HowTmoraaWorkSection />
       {/* <WhyYoullLoveTmoraaSection/> */}
-      <FaqSection/>
+      <FaqSection />
+      <Footer />
     </>
   )
 }
