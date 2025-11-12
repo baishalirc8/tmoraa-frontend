@@ -16,7 +16,7 @@ export default function LinkButton({
     return (
         <button
             onClick={onClick}
-            className={`bg-transparent rounded-full text-base hover:underline focus:outline-none ${className}`}
+            className={`text-[#181818] bg-transparent rounded-full text-base font-medium hover:underline focus:outline-none hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2] hover:bg-clip-text hover:text-transparent ${className}`}
             {...props}
         >
             {children}

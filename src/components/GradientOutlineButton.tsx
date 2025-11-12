@@ -16,11 +16,11 @@ export default function GradientOutlineButton({
     return (
         <button
             onClick={onClick}
-            className={`relative inline-block rounded-full p-px bg-linear-to-r from-[#29b47d] to-[#0a80d2] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#29b47d]/50 ${className}`}
+            className={`relative inline-block rounded-full p-px bg-linear-to-r from-[#29b47d] to-[#0a80d2] hover:to-[#29b47d] hover:from-[#0a80d2] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#29b47d]/50 ${className}`}
             {...props}
         >
-            <span className="block rounded-full bg-background px-6 py-2">
-                <span className="bg-clip-text text-transparent bg-linear-to-r from-[#29b47d] to-[#0a80d2] font-semibold">
+            <span className="block rounded-full bg-background px-6 py-3">
+                <span className="bg-clip-text text-transparent bg-linear-to-r from-[#29b47d] to-[#0a80d2] hover:to-[#29b47d] hover:from-[#0a80d2] font-medium">
                     {children}
                 </span>
             </span>

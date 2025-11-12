@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
             </div> */}
 
-            <p className='mt-4 pb-4 flex justify-center items-center'>© Tmoraa | 2025 All rights reserved.</p>
+            <p className='mt-4 pb-16 flex justify-center items-center'>© Tmoraa | 2025 All rights reserved.</p>
 
         </footer>
     )

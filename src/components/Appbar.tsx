@@ -17,12 +17,12 @@ export default function Appbar() {
 
     return (
         <nav className='sticky top-0 z-50 bg-white/2 backdrop-blur-md'>
-            <div className="flex items-center justify-between p-4">
+            <div className="flex items-center justify-between py-4 px-6">
                 {/* Logo */}
-                <Image src="/tmoraa-logo.png" alt="Tmoraa Logo" width={200} height={0} />
+                <Image src="/tmoraa-logo.png" alt="Tmoraa Logo" width={221} height={0} />
 
                 {/* Navigation Links */}
-                <div className="flex items-center space-x-8">
+                <div className="flex items-center space-x-16 ">
                     <LinkButton onClick={() => {
                         handleScroll("home")
                     }}>Home</LinkButton>
