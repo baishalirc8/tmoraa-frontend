@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <>
+        <footer>
             <div className='flex justify-center items-center'>
                 {/* <img src="/mobile-chat-icon.png" alt="phone" className='pr-4 h-6' />
                 <p>+1 (800) 123-4567</p> */}
@@ -28,6 +28,6 @@ export default function Footer() {
 
             <p className='mt-4 pb-4 flex justify-center items-center'>© Tmoraa | 2025 All rights reserved.</p>
 
-        </>
+        </footer>
     )
 }

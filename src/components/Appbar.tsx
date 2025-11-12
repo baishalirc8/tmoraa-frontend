@@ -16,7 +16,7 @@ export default function Appbar() {
     };
 
     return (
-        <div className='sticky top-0 z-50 bg-white/2 backdrop-blur-md'>
+        <nav className='sticky top-0 z-50 bg-white/2 backdrop-blur-md'>
             <div className="flex items-center justify-between p-4">
                 {/* Logo */}
                 <Image src="/tmoraa-logo.png" alt="Tmoraa Logo" width={200} height={0} />
@@ -49,6 +49,6 @@ export default function Appbar() {
                     <GradientButton>Sign up</GradientButton>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }

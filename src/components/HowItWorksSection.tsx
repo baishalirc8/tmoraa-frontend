@@ -3,7 +3,7 @@ import FeatureCard from './FeatureCard'
 
 export default function HowItWorksSection() {
     return (
-        <div className='relative h-fit'>
+        <section className='relative h-fit'>
             <img src="/smart-bg-ellipse.png" alt='' className='absolute w-screen object-cover z-0' />
             <img src="/mission-card-top.png" alt='' className='absolute left-30 top-[63%] h-20 w-20 object-cover' />
             <img src="/mission-card-bottom.png" alt='' className='absolute right-30 top-[90%] h-20 w-20 object-cover' />
@@ -31,6 +31,6 @@ export default function HowItWorksSection() {
                     <p>To become the essential intelligence layer that transforms fragmented restaurant data into clear, profitable decisions worldwide—helping every restaurant operate with the precision of a command center while preserving their existing technology investments.</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

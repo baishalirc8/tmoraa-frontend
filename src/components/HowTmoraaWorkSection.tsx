@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 export default function HowTmoraaWorkSection() {
   return (
-    <div className="mt-20">
+    <section className="mt-20">
       <div className="mb-10 flex justify-center items-center">
         <h2 className="text-4xl font-semibold">How Tmoraa Works</h2>
       </div>
@@ -50,6 +50,6 @@ export default function HowTmoraaWorkSection() {
           className="h-80!"
         />
       </div>
-    </div>
+    </section>
   );
 }

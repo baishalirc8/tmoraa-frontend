@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutSection() {
     return (
-        <>
+        <section>
             <div
                 id="aboutUs"
                 className="relative mt-5 bg-[#778EFF]/[0.14] h-fit text-foreground"
@@ -82,6 +82,6 @@ export default function AboutSection() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }

@@ -3,7 +3,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './
 
 export default function FaqSection() {
   return (
-    <div id='faq' className='py-15'>
+    <section id='faq' className='py-15'>
       <div className='mb-10 flex justify-center items-center'>
         <h2 className='text-4xl font-semibold'>Frequently Asked Questions</h2>
       </div>
@@ -96,6 +96,6 @@ export default function FaqSection() {
         </AccordionItem>
 
       </Accordion>
-    </div>
+    </section>
   )
 }

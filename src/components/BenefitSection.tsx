@@ -4,7 +4,7 @@ import GradientButton from './GradientButton'
 
 export default function BenefitSection() {
     return (
-        <div className="relative bg-[url('/benefit-bg.png')] bg-cover bg-center h-fit">
+        <section className="relative bg-[url('/benefit-bg.png')] bg-cover bg-center h-fit">
             <img
                 src="/blob-tear.png"
                 alt=""
@@ -49,6 +49,6 @@ export default function BenefitSection() {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
