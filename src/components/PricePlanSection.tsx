@@ -4,22 +4,22 @@ import GradientOutlineButton from "./GradientOutlineButton";
 
 export default function PricePlanSection() {
   return (
-    <section id="pricing" className="mt-4 mb-10 relative h-fit overflow-hidden">
+    <section id="pricing" className="mt-4 lg:mt-0 mb-10 relative h-fit overflow-hidden">
       <img src="/price-plan-bg.png" alt="" className="hidden lg:block absolute -top-40 -z-50 w-full object-cover" />
 
-      <div className="flex justify-center items-center px-6">
+      <div className="flex justify-center items-center pt-20 px-6">
         <h2 className="text-3xl md:text-5xl font-semibold text-center">
           Smarter Plans for Every F&B Business
         </h2>
       </div>
 
-      <p className="mt-5 px-6 lg:px-56 text-center leading-9 text-base md:text-lg">
+      <p className="mt-5 px-6 lg:px-96 text-center leading-9 text-base md:text-lg">
         Choose a flexible plan that grows with you. Whether you operate one F&B
         location or fifty, Tmoraa offers scalable pricing to match your business
         size and goals
       </p>
 
-      <div className="flex flex-col lg:flex-row gap-6 my-10 justify-center items-center px-6 lg:px-4">
+      <div className="flex flex-col lg:flex-row gap-6 my-10 justify-center items-center lg:px-4">
         <PricingCard
           planName="Command Suite Essential"
           employeesRange="Up to 0-20 employees"
@@ -93,12 +93,12 @@ export default function PricePlanSection() {
         <div className="mt-20 flex justify-center items-center text-3xl md:text-5xl text-black font-semibold text-center px-6">All Plans Include</div>
 
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mt-10 px-6 lg:px-64">
-          <GradientOutlineButton textStyle="text-foreground! text-lg! md:text-[20px]">Unlimited real-time data sync</GradientOutlineButton>
-          <GradientOutlineButton textStyle="text-foreground! text-lg! md:text-[20px]">AI insights and alerts</GradientOutlineButton>
-          <GradientOutlineButton textStyle="text-foreground! text-lg! md:text-[20px]">Forecasting and planning tools</GradientOutlineButton>
-          <GradientOutlineButton textStyle="text-foreground! text-lg! md:text-[20px]">Smart schedule builder</GradientOutlineButton>
-          <GradientOutlineButton textStyle="text-foreground! text-lg! md:text-[20px]">Customer sentiment analytics</GradientOutlineButton>
-          <GradientOutlineButton textStyle="text-foreground! text-lg! md:text-[20px]">Mobile app access</GradientOutlineButton>
+          <GradientOutlineButton className="cursor-default!" textStyle="text-foreground! text-lg! md:text-[20px]">Unlimited real-time data sync</GradientOutlineButton>
+          <GradientOutlineButton className="cursor-default!" textStyle="text-foreground! text-lg! md:text-[20px]">AI insights and alerts</GradientOutlineButton>
+          <GradientOutlineButton className="cursor-default!" textStyle="text-foreground! text-lg! md:text-[20px]">Forecasting and planning tools</GradientOutlineButton>
+          <GradientOutlineButton className="cursor-default!" textStyle="text-foreground! text-lg! md:text-[20px]">Smart schedule builder</GradientOutlineButton>
+          <GradientOutlineButton className="cursor-default!" textStyle="text-foreground! text-lg! md:text-[20px]">Customer sentiment analytics</GradientOutlineButton>
+          <GradientOutlineButton className="cursor-default!" textStyle="text-foreground! text-lg! md:text-[20px]">Mobile app access</GradientOutlineButton>
         </div>
       </div>
     </section>
