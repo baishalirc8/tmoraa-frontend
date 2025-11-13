@@ -19,7 +19,6 @@ export default function FeatureCard({
             className={`h-70 flex flex-col items-center text-center p-4 pt-10 rounded-3xl 
             shadow-xl bg-background z-30 max-w-sm ${className} `}
         >
-            {/* icon container with even shadow all around */}
             <div
                 className="w-30 h-30 mb-10 p-5 flex items-center justify-center rounded-full 
                     bg-background shadow-[0_0_15px_rgba(0,0,0,0.15)] 

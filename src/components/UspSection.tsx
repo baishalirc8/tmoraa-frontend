@@ -1,13 +1,17 @@
-import React from "react";
 import FeatureCard from "./FeatureCard";
 
 export default function UspSection() {
   return (
-    <section id="features" className="my-10">
-      <div className="mb-10 flex justify-center items-center">
-        <h2 className="text-5xl text-black font-semibold">What Makes Us Different</h2>
+    <section id="features" className="my-10 md:my-16">
+      <div className="mb-10 md:mb-16 flex justify-center items-center text-center px-6">
+        <h2 className="text-3xl md:text-5xl text-black font-semibold">
+          What Makes Us Different
+        </h2>
       </div>
-      <div className="flex justify-center items-center space-x-4 mx-20">
+
+
+      <div className="flex flex-col lg:flex-row justify-center items-center 
+                      space-y-6 lg:space-y-0 lg:space-x-4 mx-6 lg:mx-20">
         <FeatureCard
           iconImg="/ai-icon.png"
           title="AI That Thinks for You"
@@ -33,9 +37,11 @@ export default function UspSection() {
           className="h-84!"
         />
       </div>
-      <div className="mt-10 flex justify-center items-center">
-        <p className="text-[#0A80D2] text-xl">
-          We don’t just deliver data—we deliver actionable intelligence that helps F&B businesses grow.
+
+      <div className="mt-10 md:mt-16 flex justify-center items-center text-center px-6">
+        <p className="text-[#0A80D2] text-lg md:text-xl">
+          We don’t just deliver data—we deliver actionable intelligence that
+          helps F&B businesses grow.
         </p>
       </div>
     </section>

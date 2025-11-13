@@ -30,8 +30,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 <p className="font-semibold text-2xl text-left mt-2 mb-8 bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent">{employeesRange}</p>
 
                 <div className="flex items-end mb-8">
-                    <div className="text-[56px] font-bold">{typeof price === 'number' ? `$${price}` : `${price}`}</div>
-                    <p className="text-sm mb-6">/ month</p>
+                    <div className="text-[50px] font-bold">{typeof price === 'number' ? `$${price}` : `${price}`}</div>
+                    <p className="text-sm mb-5">/ month</p>
                 </div>
 
 

@@ -3,20 +3,23 @@ import React from 'react'
 export default function AboutSection() {
     return (
         <section>
+
             <div
                 id="aboutUs"
-                className="relative mt-5 bg-[#778EFF]/[0.14] h-fit text-foreground"
+                className="relative mt-5 bg-[#778EFF]/[0.14] h-fit text-foreground overflow-hidden" // Added overflow-hidden
             >
                 <img
                     src="/blob-tear.png"
                     alt=""
-                    className="absolute left-15 top-15 h-48 w-48 z-30 object-cover"
+
+                    className="absolute left-4 top-4 h-24 w-24 
+                               md:left-15 md:top-15 md:h-48 md:w-48 z-30 object-cover"
                 />
 
-                <div className="grid grid-cols-2">
-                    <div className="pt-52 pb-64 pl-64 pr-10">
-                        <h2 className="text-5xl text-black font-semibold">About Tmoraa</h2>
-                        <p className="mt-10 leading-[29px]">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                    <div className="pt-28 pb-16 px-6 lg:pt-52 lg:pb-64 lg:pl-64 lg:pr-10 z-10">
+                        <h2 className="text-3xl md:text-5xl text-black font-semibold">About Tmoraa</h2>
+                        <p className="mt-6 md:mt-10 leading-[29px]">
                             Tmoraa is the restaurant industry's first true command
                             center—aggregating data from your existing POS, inventory, and
                             reservation systems to reveal insights you've never had access to
@@ -31,39 +34,44 @@ export default function AboutSection() {
                         </p>
                     </div>
 
-                    <div className="relative my-25 ml-10 w-[75%]">
+                    <div className="relative my-16 mx-6 lg:my-25 lg:ml-10 lg:mr-0 lg:w-[75%]">
                         <img
                             src="/card-bg-top.png"
                             alt=""
-                            className="absolute -top-12 -left-14 object-cover"
+                            className="hidden lg:block absolute -top-12 -left-14 object-cover"
                         />
 
-                        <div className="bg-background rounded-2xl w-[660px] h-[584px] z-10 relative"></div>
+                        <div className="bg-background rounded-2xl w-full h-96 
+                                        lg:w-[660px] lg:h-[584px] z-10 relative">
+                        </div>
 
                         <img
                             src="/card-bg-bottom.png"
                             alt=""
-                            className="absolute -bottom-12 -right-10  object-cover"
+                            className="hidden lg:block absolute -bottom-12 -right-10 object-cover"
                         />
                     </div>
                 </div>
             </div>
 
-            <div className="relative my-32 mx-56">
+            <div className="relative my-16 mx-6 lg:my-32 lg:mx-56">
                 <img
                     src="/straight-quotes-top.png"
                     alt=""
-                    className="absolute bottom-[84%] left-9 z-30"
+                    className="absolute bottom-[95%] left-4 w-16 
+                                md:bottom-[84%] md:left-9 md:w-auto z-30"
                 />
                 <img
                     src="/quotes.png"
                     alt=""
-                    className="absolute bottom-[5%] left-[60%] z-30 opacity-12"
+                    className="absolute bottom-[5%] left-[60%] w-24 
+                                md:w-auto z-30 opacity-12"
                 />
-                <div className="bg-background rounded-2xl shadow-2xl p-8">
-                    <div className="grid grid-cols-[5fr_2fr] gap-4">
-                        <div className="pt-20 pb-10 pr-32">
-                            <p className='text-[18px] leading-9'>
+
+                <div className="bg-background rounded-2xl shadow-2xl p-6 md:p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-[5fr_2fr] gap-8 md:gap-4">
+                        <div className="pt-10 md:pt-20 pb-10 pr-0 lg:pr-32 order-last lg:order-0">
+                            <p className='text-base md:text-[18px] leading-8 md:leading-9'>
                                 Kyrian Said is a technological architecture expert with 4 years
                                 of specialized experience building scalable data orchestration
                                 platforms at a leading tech company, while simultaneously
@@ -75,10 +83,14 @@ export default function AboutSection() {
                                 industry's first true command center that intelligently connects
                                 existing systems without replacement.
                             </p>
-                            <p className="text-3xl font-bold mt-10">Kyrian Said</p>
+                            <p className="text-2xl md:text-3xl font-bold mt-8 md:mt-10">Kyrian Said</p>
                             <p className="mt-1 text-[#505050] text-lg">Founder & CEO</p>
                         </div>
-                        <img src="/krn1.png" alt="Founder & CEO" className="size-96" />
+                        <img
+                            src="/krn1.png"
+                            alt="Founder & CEO"
+                            className="size-64 md:size-96 mx-auto lg:mx-0 order-first lg:order-0"
+                        />
                     </div>
                 </div>
             </div>
