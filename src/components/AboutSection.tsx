@@ -10,13 +10,13 @@ export default function AboutSection() {
                 <img
                     src="/blob-tear.png"
                     alt=""
-                    className="absolute left-15 top-15 h-28 w-28 z-30 object-cover"
+                    className="absolute left-15 top-15 h-48 w-48 z-30 object-cover"
                 />
 
                 <div className="grid grid-cols-2">
-                    <div className="py-36 pl-44 pr-10">
-                        <h2 className="text-4xl font-semibold">About Tmoraa</h2>
-                        <p className="mt-10">
+                    <div className="pt-52 pb-64 pl-64 pr-10">
+                        <h2 className="text-5xl text-black font-semibold">About Tmoraa</h2>
+                        <p className="mt-10 leading-[29px]">
                             Tmoraa is the restaurant industry's first true command
                             center—aggregating data from your existing POS, inventory, and
                             reservation systems to reveal insights you've never had access to
@@ -35,25 +35,25 @@ export default function AboutSection() {
                         <img
                             src="/card-bg-top.png"
                             alt=""
-                            className="absolute -top-14 -left-14 h-20 w-22 object-cover"
+                            className="absolute -top-12 -left-14 object-cover"
                         />
 
-                        <div className="bg-background rounded-2xl w-full h-full min-h-[400px] z-10 relative"></div>
+                        <div className="bg-background rounded-2xl w-[660px] h-[584px] z-10 relative"></div>
 
                         <img
                             src="/card-bg-bottom.png"
                             alt=""
-                            className="absolute -bottom-10 -right-10 h-20 w-20 object-cover"
+                            className="absolute -bottom-12 -right-10  object-cover"
                         />
                     </div>
                 </div>
             </div>
 
-            <div className="relative my-20 mx-32">
+            <div className="relative my-32 mx-56">
                 <img
                     src="/straight-quotes-top.png"
                     alt=""
-                    className="absolute bottom-[80%] left-9 z-30"
+                    className="absolute bottom-[84%] left-9 z-30"
                 />
                 <img
                     src="/quotes.png"
@@ -62,8 +62,8 @@ export default function AboutSection() {
                 />
                 <div className="bg-background rounded-2xl shadow-2xl p-8">
                     <div className="grid grid-cols-[5fr_2fr] gap-4">
-                        <div className="pt-20 pb-10 pr-20">
-                            <p>
+                        <div className="pt-20 pb-10 pr-32">
+                            <p className='text-[18px] leading-9'>
                                 Kyrian Said is a technological architecture expert with 4 years
                                 of specialized experience building scalable data orchestration
                                 platforms at a leading tech company, while simultaneously
@@ -75,10 +75,10 @@ export default function AboutSection() {
                                 industry's first true command center that intelligently connects
                                 existing systems without replacement.
                             </p>
-                            <p className="text-2xl font-semibold mt-10">Kyrian Said</p>
-                            <p className="mt-1 text-muted-foreground">Founder & CEO</p>
+                            <p className="text-3xl font-bold mt-10">Kyrian Said</p>
+                            <p className="mt-1 text-[#505050] text-lg">Founder & CEO</p>
                         </div>
-                        <img src="/krn1.png" alt="Founder & CEO" className="h-96" />
+                        <img src="/krn1.png" alt="Founder & CEO" className="size-96" />
                     </div>
                 </div>
             </div>

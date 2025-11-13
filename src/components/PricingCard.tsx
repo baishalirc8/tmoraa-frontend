@@ -27,11 +27,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 )}
 
                 <h3 className="text-2xl font-semibold mt-4 text-left">{planName}</h3>
-                <p className="font-semibold text-lg text-left mt-2 mb-8 bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent">{employeesRange}</p>
+                <p className="font-semibold text-2xl text-left mt-2 mb-8 bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent">{employeesRange}</p>
 
                 <div className="flex items-end mb-8">
-                    <div className="text-4xl font-bold">{typeof price === 'number' ? `$${price}` : `${price}`}</div>
-                    <p className="text-sm mb-1">/ month</p>
+                    <div className="text-[56px] font-bold">{typeof price === 'number' ? `$${price}` : `${price}`}</div>
+                    <p className="text-sm mb-6">/ month</p>
                 </div>
 
 

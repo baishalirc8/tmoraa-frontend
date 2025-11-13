@@ -7,8 +7,13 @@ export default function Footer() {
             <div className='flex justify-center items-center'>
                 {/* <img src="/mobile-chat-icon.png" alt="phone" className='pr-4 h-6' />
                 <p>+1 (800) 123-4567</p> */}
-                <img src="/email-icon.png" alt="email" className='pr-4 h-5' />
-                <p>support@tmoraa.com</p>
+                <img src="/email-icon.png" alt="email" className='pr-4 h-5 ' />
+                <a
+                    href="mailto:support@tmoraa.com"
+                    className="text-[20px] hover:underline"
+                >
+                    support@tmoraa.com
+                </a>
             </div>
 
             {/* <div className='mt-4 flex justify-center items-center gap-6'>
@@ -26,7 +31,7 @@ export default function Footer() {
                 </div>
             </div> */}
 
-            <p className='mt-4 pb-16 flex justify-center items-center'>© Tmoraa | 2025 All rights reserved.</p>
+            <p className='mt-8 pb-16 flex justify-center items-center'>© Tmoraa | 2025 All rights reserved.</p>
 
         </footer>
     )
