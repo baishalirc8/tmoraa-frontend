@@ -1,6 +1,7 @@
 import React from 'react'
 import List from './List'
 import GradientButton from './GradientButton'
+import Image from 'next/image';
 
 export default function BenefitSection() {
     return (
@@ -41,7 +42,13 @@ export default function BenefitSection() {
                         className="absolute -top-12 -left-14 object-cover hidden lg:block"
                     />
 
-                    <div className="bg-background rounded-2xl w-full h-[400px] sm:h-[500px] lg:w-[660px] lg:h-[584px] z-10 relative">
+                    <div className="bg-background rounded-2xl w-full h-[400px] sm:h-[500px] lg:w-[660px] lg:h-[584px] z-10 relative overflow-hidden">
+                        <Image
+                            src="/dashboard.png"
+                            alt="Dashboard preview"
+                            fill
+                            className="object-cover object-left"
+                        />
                     </div>
 
                     <img

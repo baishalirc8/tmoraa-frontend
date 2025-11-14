@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 export default function AboutSection() {
     return (
@@ -41,8 +42,13 @@ export default function AboutSection() {
                             className="hidden lg:block absolute -top-12 -left-14 object-cover"
                         />
 
-                        <div className="bg-background rounded-2xl w-full h-96 
-                                        lg:w-[660px] lg:h-[584px] z-10 relative">
+                        <div className="bg-background rounded-2xl w-full h-96 lg:w-[660px] lg:h-[584px] z-10 relative overflow-hidden">
+                            <Image
+                                src="/reports.png"
+                                alt="Reports preview"
+                                fill
+                                className="object-cover object-left"
+                            />
                         </div>
 
                         <img
