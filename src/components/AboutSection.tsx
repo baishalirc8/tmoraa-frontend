@@ -35,7 +35,7 @@ export default function AboutSection() {
                         </p>
                     </div>
 
-                    <div className="relative my-16 mx-6 lg:my-25 lg:ml-20 lg:mr-0 w-full">
+                    <div className="relative my-16 mx-6 lg:my-25 lg:ml-20 lg:mr-0 w-auto lg:w-full">
                         <img
                             data-aos="fade-down-right"
                             src="/card-bg-top.png"
