@@ -5,6 +5,7 @@ export default function WhyYoullLoveTmoraaSection() {
   return (
     <section className="py-16 md:py-28 lg:pb-0 flex justify-center items-center">
       <div
+        data-aos="zoom-in"
         className="text-center bg-[url('/love-tmoraa-bg.png')] bg-cover bg-center bg-no-repeat 
                            px-6 md:px-20 lg:px-40 py-10"
       >

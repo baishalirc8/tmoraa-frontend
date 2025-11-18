@@ -1,3 +1,5 @@
+'use client'
+
 import AboutSection from '@/components/AboutSection'
 import Appbar from '@/components/Appbar'
 import BenefitSection from '@/components/BenefitSection'

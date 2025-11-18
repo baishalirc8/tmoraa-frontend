@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer>
+        <footer data-aos="fade-up" >
             <div className='flex justify-center items-center'>
 
                 <img src="/email-icon.png" alt="email" className='pr-4 h-5 ' />
@@ -13,7 +13,7 @@ export default function Footer() {
                     support@tmoraa.com
                 </Link>
             </div>
-            <p className='mt-8 pb-16 flex justify-center items-center'>© Tmoraa | 2025 All rights reserved.</p>
+            <div className='mt-8 pb-16 flex justify-center items-center'>© Tmoraa | 2025 All rights reserved.</div>
 
         </footer>
     )

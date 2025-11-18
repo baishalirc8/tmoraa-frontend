@@ -4,21 +4,21 @@ import Image from 'next/image';
 export default function AboutSection() {
     return (
         <section>
-
             <div
                 id="aboutUs"
-                className="relative mt-5 bg-[#778EFF]/[0.14] h-fit text-foreground overflow-hidden" // Added overflow-hidden
+                className="relative mt-5 bg-[#778EFF]/[0.14] h-fit text-foreground overflow-hidden"
             >
                 <img
                     src="/blob-tear.png"
                     alt=""
-
-                    className="absolute left-4 top-4 h-24 w-24 
-                               md:left-15 md:top-15 md:h-48 md:w-48 z-30 object-cover"
+                    className="absolute left-4 top-4 h-24 w-24
+                                 md:left-15 md:top-15 md:h-48 md:w-48 z-30 object-cover"
                 />
 
-                <div className="grid grid-cols-1 lg:grid-cols-2">
-                    <div className="pt-28 pb-16 px-6 lg:pt-52 lg:pb-64 lg:pl-64 lg:pr-10 z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] items-center">
+
+
+                    <div data-aos="fade-right" className="pt-28 pb-16 px-6 lg:pt-52 lg:pb-64 lg:pl-48 lg:pr-10 z-10">
                         <h2 className="text-3xl md:text-5xl text-black font-semibold">About Tmoraa</h2>
                         <p className="mt-6 md:mt-10 leading-[29px]">
                             Tmoraa is the restaurant industry's first true command
@@ -35,26 +35,30 @@ export default function AboutSection() {
                         </p>
                     </div>
 
-                    <div className="relative my-16 mx-6 lg:my-25 lg:ml-10 lg:mr-0 lg:w-[75%]">
+                    <div className="relative my-16 mx-6 lg:my-25 lg:ml-20 lg:mr-0 w-full">
                         <img
+                            data-aos="fade-down-right"
                             src="/card-bg-top.png"
                             alt=""
                             className="hidden lg:block absolute -top-12 -left-14 object-cover"
                         />
 
-                        <div className="bg-background rounded-2xl w-full h-96 lg:w-[660px] lg:h-[584px] z-10 relative overflow-hidden">
+                        <div data-aos="zoom-in" className="bg-background rounded-2xl w-full lg:w-[900px] z-10 relative overflow-hidden shadow-lg">
                             <Image
                                 src="/reports.png"
                                 alt="Reports preview"
-                                fill
-                                className="object-cover object-left"
+                                width={1904}
+                                height={1079}
+                                className="w-full h-auto"
+                                sizes="(max-width: 768px) 100vw, 850px"
                             />
                         </div>
 
                         <img
+                            data-aos="fade-up-left"
                             src="/card-bg-bottom.png"
                             alt=""
-                            className="hidden lg:block absolute -bottom-12 -right-10 object-cover"
+                            className="hidden lg:block absolute -bottom-18 right-44 object-cover"
                         />
                     </div>
                 </div>
@@ -62,22 +66,24 @@ export default function AboutSection() {
 
             <div className="relative my-16 mx-6 lg:my-32 lg:mx-56">
                 <img
+                    data-aos="flip-left"
                     src="/straight-quotes-top.png"
                     alt=""
-                    className="absolute bottom-[95%] left-4 w-16 
-                                md:bottom-[84%] md:left-9 md:w-auto z-30"
+                    className="absolute bottom-[95%] left-4 w-16
+                                 md:bottom-[84%] md:left-9 md:w-auto z-30"
                 />
                 <img
+                    data-aos="flip-right"
                     src="/quotes.png"
                     alt=""
-                    className="absolute bottom-[5%] left-[60%] w-24 
-                                md:w-auto z-30 opacity-12"
+                    className="absolute bottom-[5%] left-[60%] w-24
+                                 md:w-auto z-30 opacity-12"
                 />
 
                 <div className="bg-background rounded-2xl shadow-[0px_85.26px_181.4px_0px_#15151526] p-6 md:p-8">
                     <div className="grid grid-cols-1 lg:grid-cols-[5fr_2fr] gap-8 md:gap-4">
                         <div className="pt-10 md:pt-20 pb-10 pr-0 lg:pr-32 order-last lg:order-0">
-                            <p className='text-base md:text-[18px] leading-8 md:leading-9'>
+                            <p data-aos="fade-down" className='text-base md:text-[18px] leading-8 md:leading-9'>
                                 Kyrian Said is a technological architecture expert with 4 years
                                 of specialized experience building scalable data orchestration
                                 platforms at a leading tech company, while simultaneously
@@ -89,18 +95,17 @@ export default function AboutSection() {
                                 industry's first true command center that intelligently connects
                                 existing systems without replacement.
                             </p>
-                            <p className="text-2xl md:text-3xl font-bold mt-8 md:mt-10">Kyrian Said</p>
-                            <p className="mt-1 text-[#505050] text-lg">Founder & CEO</p>
+                            <p data-aos="fade-up" className="text-2xl md:text-3xl font-bold mt-8 md:mt-10">Kyrian Said</p>
+                            <p data-aos="fade-up" className="mt-1 text-[#505050] text-lg">Founder & CEO</p>
                         </div>
                         <img
+                            data-aos="zoom-in"
                             src="/krn1.png"
                             alt="Founder & CEO"
                             className="size-64 md:size-96 mx-auto lg:mx-0 order-first lg:order-0 rounded-full object-cover"
                         />
-
                     </div>
                 </div>
-
             </div>
         </section>
     )

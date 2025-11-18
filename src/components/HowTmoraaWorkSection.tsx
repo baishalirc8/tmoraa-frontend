@@ -5,12 +5,12 @@ export default function HowTmoraaWorkSection() {
   return (
     <section className="mt-10 md:mt-20">
       <div className="mb-10 flex justify-center items-center text-center px-6">
-        <h2 className="text-3xl md:text-5xl text-black font-semibold">
+        <h2 data-aos="zoom-out" className="text-3xl md:text-5xl text-black font-semibold">
           How Tmoraa Works
         </h2>
       </div>
 
-      <p className="mb-10 md:mb-16 mx-6 lg:mx-60 text-center text-lg md:text-xl">
+      <p data-aos="fade-down" className="mb-10 md:mb-16 mx-6 lg:mx-60 text-center text-lg md:text-xl">
         Tmoraa helps F&B leaders streamline daily operations, enhance
         visibility, and drive data-backed performance. Every feature is designed
         to simplify complex workflows and uncover opportunities for improvement.
@@ -18,43 +18,42 @@ export default function HowTmoraaWorkSection() {
 
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-6 md:mx-12 lg:mx-36">
-        <FeatureCard
+        <div data-aos="slide-right"><FeatureCard
           iconImg="/ai-all-icon.png"
           title="All-in-One Dashboard"
           description="Your Operations at a Glance – Monitor everything that matters in real time—from sales and reviews to staff performance and inventory status. Gain instant visibility into every location and make informed decisions from anywhere"
-
           className="h-auto lg:h-104! max-w-lg!"
-        />
-        <FeatureCard
+        /></div>
+        <div data-aos="flip-down"><FeatureCard
           iconImg="/ai-insights.png"
           title="AI Insights"
           description="Turn Data into Action – Tmoraa analyses your operational data to identify trends, predict customer demand, and recommend optimal actions. From adjusting staffing levels to highlighting menu opportunities, the AI ensures your next move is your smartest"
           className="h-auto lg:h-104! max-w-lg!"
-        />
-        <FeatureCard
+        /></div>
+        <div data-aos="slide-left"><FeatureCard
           iconImg="/schedule-icon.png"
           title="Smart Schedule Builder"
           description="Eliminate the guesswork from shift planning. Auto-generate schedules aligned with forecasted traffic, balance labour costs, and notify your team instantly."
           className="h-auto lg:h-104! max-w-lg!"
-        />
-        <FeatureCard
+        /></div>
+        <div data-aos="slide-right"><FeatureCard
           iconImg="/forecasting-icon.png"
           title="Forecasting & Planning"
           description="Predict busy periods, optimize inventory, and reduce waste with AI-driven forecasting. Tmoraa helps you plan days, weeks, and months ahead—with confidence."
           className="h-auto lg:h-96! max-w-lg!"
-        />
-        <FeatureCard
+        /></div>
+        <div data-aos="flip-up"><FeatureCard
           iconImg="/seamless-icon.png"
           title="Seamless Data Sync"
           description="Tmoraa connects securely with your existing systems, consolidating all your data in real-time for consistent accuracy and better insight."
           className="h-auto lg:h-96! max-w-lg!"
-        />
-        <FeatureCard
+        /></div>
+        <div data-aos="slide-left"><FeatureCard
           iconImg="/mobile-management-icon.png"
           title="Mobile Management"
           description="Access dashboards, reports, and alerts from anywhere. Stay in control, whether on-site or on the go."
           className="h-auto lg:h-96! max-w-lg!"
-        />
+        /></div>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ export default function FaqSection() {
   return (
     <section id='faq' className='py-16 md:py-20'>
       <div className='mb-10 flex justify-center items-center px-6'>
-        <h2 className='text-3xl md:text-5xl font-semibold text-center'>Frequently Asked Questions</h2>
+        <h2 data-aos="zoom-out" className='text-3xl md:text-5xl font-semibold text-center'>Frequently Asked Questions</h2>
       </div>
       <Accordion
         type="single"
@@ -12,7 +12,7 @@ export default function FaqSection() {
         className="w-full max-w-4xl mx-auto px-6 space-y-4"
         defaultValue="general-questions"
       >
-        <AccordionItem value="general-questions" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
+        <div data-aos="fade-down"><AccordionItem value="general-questions" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
           <AccordionTrigger className='text-lg md:text-xl'>General Questions</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 leading-7 text-base md:text-lg">
             <div>
@@ -33,9 +33,9 @@ export default function FaqSection() {
                 recommendations.</p>
             </div>
           </AccordionContent>
-        </AccordionItem>
+        </AccordionItem></div>
 
-        <AccordionItem value="features-and-tools" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
+        <div data-aos="slide-down" ><AccordionItem value="features-and-tools" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
           <AccordionTrigger className='text-lg md:text-xl'>Features & Tools</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 leading-7 text-base md:text-lg">
             <ul className='pl-2 list-disc list-inside leading-9'>
@@ -57,15 +57,15 @@ export default function FaqSection() {
                 schedules directly from your dashboard with full AI-driven optimization.</p>
             </div>
           </AccordionContent>
-        </AccordionItem>
+        </AccordionItem></div>
 
-        <AccordionItem value="pricing-and-plans" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
+        <div data-aos="slide-down" ><AccordionItem value="pricing-and-plans" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
           <AccordionTrigger className='text-lg md:text-xl'>Pricing & Plans</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 leading-7 text-base md:text-lg">
             <div>
               <p className='font-semibold text-base md:text-[18px]'>How much does Tmoraa cost?</p>
               <p>Pricing is based on employee tiers, starting at $99 per month
-                for 0–20 employees. A progressive discount of 10% is applied for additional users. There
+                for 0–20 employees. There
                 might be integration fees based on the solution provided.
               </p>
             </div>
@@ -79,9 +79,9 @@ export default function FaqSection() {
                 scheduling, and inventory tools for smooth data synchronization.</p>
             </div>
           </AccordionContent>
-        </AccordionItem>
+        </AccordionItem></div>
 
-        <AccordionItem value="custom-solutions" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
+        <div data-aos="slide-down"><AccordionItem value="custom-solutions" className='shadow-[0_0_15px_rgba(0,0,0,0.15)] rounded-xl'>
           <AccordionTrigger className='text-lg md:text-xl'>Large Chains & Custom Solutions</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 leading-7 text-base md:text-lg">
             <div>
@@ -92,7 +92,7 @@ export default function FaqSection() {
 
             </div>
           </AccordionContent>
-        </AccordionItem>
+        </AccordionItem></div>
 
       </Accordion>
     </section>

@@ -3,7 +3,7 @@ import List from './List'
 export default function ProblemSolutionSection() {
     return (
         <section className="overflow-x-hidden">
-            <div className="mt-12 md:mt-20 flex justify-center items-center px-4">
+            <div data-aos="zoom-out" className="mt-12 md:mt-20 flex justify-center items-center px-4">
                 <h2 className="text-3xl md:text-5xl font-semibold text-black text-center">Problem & Solution</h2>
             </div>
 
@@ -33,7 +33,7 @@ export default function ProblemSolutionSection() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:mt-16">
 
-                        <div className='
+                        <div data-aos="slide-right" className='
                             lg:mr-40 
                             p-6  md:p-0 md:rounded-none
                             bg-[linear-gradient(131.34deg,#E7F5FF_23.04%,#F9FCFE_88.6%)] md:bg-none
@@ -47,7 +47,7 @@ export default function ProblemSolutionSection() {
                         </div>
 
 
-                        <div className='
+                        <div data-aos="slide-left" className='
                             md:mt-10 
                             p-6 md:p-0 md:rounded-none
                             bg-[linear-gradient(273.66deg,#B7DEFA_17.27%,#FFFFFF_79.95%)] md:bg-none
@@ -64,7 +64,7 @@ export default function ProblemSolutionSection() {
                         </div>
                     </div>
 
-                    <div className="mt-24 md:mt-40 lg:mt-60 mb-16 md:mb-28 text-center lg:px-0 px-6">
+                    <div data-aos="zoom-in" className="mt-24 md:mt-40 lg:mt-60 mb-16 md:mb-28 text-center lg:px-0 px-6">
                         <h2 className="text-3xl md:text-5xl text-black font-semibold leading-tight md:leading-[58px] w-full max-w-[789px] mx-auto">
                             Seamlessly Connect Your Entire Tech Stack
                         </h2>

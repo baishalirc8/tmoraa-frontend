@@ -51,7 +51,7 @@ export default function Appbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className='sticky top-0 z-50 bg-white/2 backdrop-blur-md relative'>
+        <nav data-aos="fade-down" className='sticky top-0 z-50 bg-white/2 backdrop-blur-md relative'>
             <div className="flex items-center justify-between py-4 px-6">
 
                 <Link href="/" >

@@ -3,7 +3,7 @@ import GradientButton from './GradientButton'
 
 export default function BookDemoSection() {
     return (
-        <section className="py-12 px-0 md:px-20 lg:px-40 flex justify-center items-center">
+        <section data-aos="zoom-out" className="py-12 px-0 md:px-20 lg:px-40 flex justify-center items-center">
             <div
                 className="w-full rounded-none lg:rounded-[100px] text-center bg-[url('/smart-cta-bg.png')] bg-cover bg-center bg-no-repeat px-8 py-16 md:px-16 lg:px-30 md:py-20 lg:py-20"
             >
