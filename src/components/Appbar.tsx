@@ -81,14 +81,14 @@ export default function Appbar({ activeSection }: { activeSection: string }) {
                         <Link
                             href="#aboutUs"
                             className={`
-      web application text-base font-medium focus:outline-none
-      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
-      hover:bg-clip-text hover:text-transparent
-      ${activeSection === "aboutUs"
+                            web application text-base font-medium focus:outline-none
+                            hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+                            hover:bg-clip-text hover:text-transparent
+                            ${activeSection === "aboutUs"
                                     ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
                                     : "text-[#181818]"
                                 }
-    `}
+                            `}
                         >
                             About Us
                         </Link>
@@ -97,14 +97,14 @@ export default function Appbar({ activeSection }: { activeSection: string }) {
                         <Link
                             href="#features"
                             className={`
-      web application text-base font-medium focus:outline-none
-      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
-      hover:bg-clip-text hover:text-transparent
-      ${activeSection === "features"
+                            web application text-base font-medium focus:outline-none
+                            hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+                            hover:bg-clip-text hover:text-transparent
+                            ${activeSection === "features"
                                     ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
                                     : "text-[#181818]"
                                 }
-    `}
+                            `}
                         >
                             Features
                         </Link>
@@ -113,14 +113,14 @@ export default function Appbar({ activeSection }: { activeSection: string }) {
                         <Link
                             href="#pricing"
                             className={`
-      web application text-base font-medium focus:outline-none
-      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
-      hover:bg-clip-text hover:text-transparent
-      ${activeSection === "pricing"
+                        web application text-base font-medium focus:outline-none
+                        hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+                        hover:bg-clip-text hover:text-transparent
+                        ${activeSection === "pricing"
                                     ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
                                     : "text-[#181818]"
                                 }
-    `}
+                        `}
                         >
                             Pricing
                         </Link>
@@ -129,14 +129,14 @@ export default function Appbar({ activeSection }: { activeSection: string }) {
                         <Link
                             href="#faq"
                             className={`
-      web application text-base font-medium focus:outline-none
-      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
-      hover:bg-clip-text hover:text-transparent
-      ${activeSection === "faq"
+                        web application text-base font-medium focus:outline-none
+                        hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+                        hover:bg-clip-text hover:text-transparent
+                        ${activeSection === "faq"
                                     ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
                                     : "text-[#181818]"
                                 }
-    `}
+                        `}
                         >
                             FAQ
                         </Link>
@@ -146,14 +146,14 @@ export default function Appbar({ activeSection }: { activeSection: string }) {
                         <Link
                             href="#contactUs"
                             className={`
-      web application text-base font-medium focus:outline-none
-      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
-      hover:bg-clip-text hover:text-transparent
-      ${activeSection === "contactUs"
+                        web application text-base font-medium focus:outline-none
+                        hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+                        hover:bg-clip-text hover:text-transparent
+                        ${activeSection === "contactUs"
                                     ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
                                     : "text-[#181818]"
                                 }
-    `}
+                        `}
                         >
                             Contact Us
                         </Link>
