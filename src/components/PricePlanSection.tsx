@@ -87,7 +87,7 @@ export default function PricePlanSection() {
       </div>
 
       <div data-aos="zoom-in" className="flex flex-col lg:flex-row justify-center items-center gap-1 text-center lg:text-left px-6 text-lg md:text-[20px]">
-        <p>Need more? for 150+ Employees <span className="cursor-pointer text-[#0A80D2] underline" >Contact use for Strategic Quote</span> </p>
+        <p>Need more? for 150+ Employees <a href="#contactUs" className="cursor-pointer text-[#0A80D2] underline" >Contact use for Strategic Quote</a> </p>
       </div>
 
       <div>

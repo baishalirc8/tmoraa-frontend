@@ -35,7 +35,12 @@ export default function BenefitSection() {
                             Save time, reduce costs, and maximize revenue
                         </List>
                     </div>
-                    <GradientButton data-aos="fade-left" className="mt-10 mx-auto lg:mx-0">Request a Demo</GradientButton>
+                    <GradientButton data-aos="fade-left" className="mt-10 mx-auto lg:mx-0" onClick={() => {
+                        const el = document.getElementById('contactUs');
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}>Request a Demo</GradientButton>
                 </div>
 
                 {/* Image Section */}

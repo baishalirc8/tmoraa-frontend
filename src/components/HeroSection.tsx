@@ -13,7 +13,12 @@ export default function HeroSection() {
                         Say goodbye to fragmented tools and manual reporting. Tmoraa unifies your F&B operations into a single intelligent dashboard that tracks sales, labour, inventory, and reviews—all enhanced by AI to help you predict trends, prevent issues, and boost performance.
                     </p>
 
-                    <GradientButton data-aos="fade-left" className='mt-8 lg:mt-10 mx-auto lg:mx-0'>
+                    <GradientButton data-aos="fade-left" className='mt-8 lg:mt-10 mx-auto lg:mx-0' onClick={() => {
+                        const el = document.getElementById('contactUs');
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}>
                         Request a Demo
                     </GradientButton>
                 </div>

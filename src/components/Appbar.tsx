@@ -5,6 +5,8 @@ import GradientOutlineButton from './GradientOutlineButton'
 import GradientButton from './GradientButton'
 import Image from 'next/image'
 import Link from 'next/link'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog'
+import { toast } from 'sonner'
 
 
 const MenuIcon = () => (
@@ -68,8 +70,38 @@ export default function Appbar() {
                 </ul>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    <GradientOutlineButton>Login</GradientOutlineButton>
-                    <GradientButton>Sign up</GradientButton>
+                    <AlertDialog>
+                        <AlertDialogTrigger asChild>
+                            <GradientOutlineButton>Login</GradientOutlineButton>
+                        </AlertDialogTrigger>
+                        <AlertDialogContent>
+                            <AlertDialogHeader>
+                                <AlertDialogTitle>Coming Soon</AlertDialogTitle>
+                                <AlertDialogDescription>
+                                    We are putting the finishing touches on the website. We will be live very soon.
+                                </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                                <AlertDialogCancel className='cursor-pointer px-6 py-3.5 font-medium text-white hover:text-white rounded-full bg-linear-to-r from-[#29b47d] to-[#0a80d2] hover:from-[#0a80d2] hover:to-[#29b47d]'>Close</AlertDialogCancel>
+                            </AlertDialogFooter>
+                        </AlertDialogContent>
+                    </AlertDialog>
+                    <AlertDialog>
+                        <AlertDialogTrigger asChild>
+                            <GradientButton>Sign Up</GradientButton>
+                        </AlertDialogTrigger>
+                        <AlertDialogContent>
+                            <AlertDialogHeader>
+                                <AlertDialogTitle>Coming Soon</AlertDialogTitle>
+                                <AlertDialogDescription>
+                                    We are putting the finishing touches on the website. We will be live very soon.
+                                </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                                <AlertDialogCancel className='cursor-pointer px-6 py-3.5 font-medium text-white hover:text-white rounded-full bg-linear-to-r from-[#29b47d] to-[#0a80d2] hover:from-[#0a80d2] hover:to-[#29b47d]'>Close</AlertDialogCancel>
+                            </AlertDialogFooter>
+                        </AlertDialogContent>
+                    </AlertDialog>
                 </div>
 
 
@@ -103,10 +135,24 @@ export default function Appbar() {
                 </ul>
 
                 <div className="flex flex-col items-center space-y-4 p-4 border-t border-gray-200/50">
-                    <GradientOutlineButton className="w-full justify-center">Login</GradientOutlineButton>
-                    <GradientButton className="w-full justify-center">Sign up</GradientButton>
+                    <GradientOutlineButton className="w-full justify-center" onClick={() =>
+                        toast("Coming Soon", {
+                            description: "We are putting the finishing touches on the website. We will be live very soon.",
+                            position: "top-center",
+                            className: "max-w-[350px] text-base!",
+                            richColors: true,
+                        })
+                    } >Login</GradientOutlineButton>
+                    <GradientButton className="w-full justify-center" onClick={() =>
+                        toast("Coming Soon", {
+                            description: "We are putting the finishing touches on the website. We will be live very soon.",
+                            position: "top-center",
+                            className: "max-w-[350px] text-base!",
+                            richColors: true,
+                        })
+                    }> Sign up</GradientButton>
                 </div>
             </div>
-        </nav>
+        </nav >
     )
 }
