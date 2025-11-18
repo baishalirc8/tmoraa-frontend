@@ -9,7 +9,7 @@ export default function ContactUsSection() {
     const [status, setStatus] = useState("");
 
     return (
-        <section id="contactUs" className="relative overflow-hidden min-h-screen">
+        <section className="relative overflow-hidden min-h-screen">
             <img
                 data-aos="slide-up"
                 src="/footer-bg.png"

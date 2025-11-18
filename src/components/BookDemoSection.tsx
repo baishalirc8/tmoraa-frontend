@@ -12,7 +12,12 @@ export default function BookDemoSection() {
                 </h2>
                 <p className="mb-10 text-base md:text-lg">Schedule a demo today!</p>
 
-                <GradientButton>BOOK A DEMO</GradientButton>
+                <GradientButton onClick={() => {
+                    const el = document.getElementById('contactUs');
+                    if (el) {
+                        el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }}>BOOK A DEMO</GradientButton>
             </div>
         </section>
     )

@@ -49,7 +49,7 @@ const XIcon = () => (
 
 
 
-export default function Appbar() {
+export default function Appbar({ activeSection }: { activeSection: string }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -61,12 +61,104 @@ export default function Appbar() {
                 </Link>
 
                 <ul className="hidden md:flex items-center space-x-16 ">
-                    <li><Link href="#home" className='text-[#181818] bg-transparent rounded-full text-base font-medium focus:outline-none hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2] hover:bg-clip-text hover:text-transparent'>Home</Link></li>
-                    <li><Link href="#aboutUs" className='text-[#181818] bg-transparent rounded-full text-base font-medium focus:outline-none hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2] hover:bg-clip-text hover:text-transparent' >About Us</Link></li>
-                    <li><Link href="#features" className='text-[#181818] bg-transparent rounded-full text-base font-medium focus:outline-none hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2] hover:bg-clip-text hover:text-transparent'>Features</Link></li>
-                    <li><Link href="#pricing" className='text-[#181818] bg-transparent rounded-full text-base font-medium focus:outline-none hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2] hover:bg-clip-text hover:text-transparent'>Pricing</Link></li>
-                    <li><Link href="#faq" className='text-[#181818] bg-transparent rounded-full text-base font-medium focus:outline-none hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2] hover:bg-clip-text hover:text-transparent'>FAQ</Link></li>
-                    <li><Link href="#contactUs" className='text-[#181818] bg-transparent rounded-full text-base font-medium focus:outline-none hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2] hover:bg-clip-text hover:text-transparent'>Contact Us</Link></li>
+                    <li>
+                        <Link
+                            href="#home"
+                            className={`
+                                web application text-base font-medium focus:outline-none
+                                hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+                                hover:bg-clip-text hover:text-transparent
+                                ${activeSection === "home"
+                                    ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
+                                    : "text-[#181818]"
+                                }
+                            `}
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="#aboutUs"
+                            className={`
+      web application text-base font-medium focus:outline-none
+      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+      hover:bg-clip-text hover:text-transparent
+      ${activeSection === "aboutUs"
+                                    ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
+                                    : "text-[#181818]"
+                                }
+    `}
+                        >
+                            About Us
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="#features"
+                            className={`
+      web application text-base font-medium focus:outline-none
+      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+      hover:bg-clip-text hover:text-transparent
+      ${activeSection === "features"
+                                    ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
+                                    : "text-[#181818]"
+                                }
+    `}
+                        >
+                            Features
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="#pricing"
+                            className={`
+      web application text-base font-medium focus:outline-none
+      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+      hover:bg-clip-text hover:text-transparent
+      ${activeSection === "pricing"
+                                    ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
+                                    : "text-[#181818]"
+                                }
+    `}
+                        >
+                            Pricing
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="#faq"
+                            className={`
+      web application text-base font-medium focus:outline-none
+      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+      hover:bg-clip-text hover:text-transparent
+      ${activeSection === "faq"
+                                    ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
+                                    : "text-[#181818]"
+                                }
+    `}
+                        >
+                            FAQ
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link
+                            href="#contactUs"
+                            className={`
+      web application text-base font-medium focus:outline-none
+      hover:bg-linear-to-r hover:from-[#29b47d] hover:to-[#0a80d2]
+      hover:bg-clip-text hover:text-transparent
+      ${activeSection === "contactUs"
+                                    ? "bg-linear-to-r from-[#29b47d] to-[#0a80d2] bg-clip-text text-transparent"
+                                    : "text-[#181818]"
+                                }
+    `}
+                        >
+                            Contact Us
+                        </Link>
+                    </li>
+
                 </ul>
 
                 <div className="hidden md:flex items-center space-x-4">
@@ -78,7 +170,7 @@ export default function Appbar() {
                             <AlertDialogHeader>
                                 <AlertDialogTitle>Coming Soon</AlertDialogTitle>
                                 <AlertDialogDescription>
-                                    We are putting the finishing touches on the website. We will be live very soon.
+                                    We are putting the finishing touches on the web application. We will be live very soon.
                                 </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>
@@ -94,7 +186,7 @@ export default function Appbar() {
                             <AlertDialogHeader>
                                 <AlertDialogTitle>Coming Soon</AlertDialogTitle>
                                 <AlertDialogDescription>
-                                    We are putting the finishing touches on the website. We will be live very soon.
+                                    We are putting the finishing touches on the web application. We will be live very soon.
                                 </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>
@@ -137,7 +229,7 @@ export default function Appbar() {
                 <div className="flex flex-col items-center space-y-4 p-4 border-t border-gray-200/50">
                     <GradientOutlineButton className="w-full justify-center" onClick={() =>
                         toast("Coming Soon", {
-                            description: "We are putting the finishing touches on the website. We will be live very soon.",
+                            description: "We are putting the finishing touches on the web application. We will be live very soon.",
                             position: "top-center",
                             className: "max-w-[350px] text-base!",
                             richColors: true,
@@ -145,7 +237,7 @@ export default function Appbar() {
                     } >Login</GradientOutlineButton>
                     <GradientButton className="w-full justify-center" onClick={() =>
                         toast("Coming Soon", {
-                            description: "We are putting the finishing touches on the website. We will be live very soon.",
+                            description: "We are putting the finishing touches on the web application. We will be live very soon.",
                             position: "top-center",
                             className: "max-w-[350px] text-base!",
                             richColors: true,

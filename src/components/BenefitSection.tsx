@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function BenefitSection() {
     return (
 
-        <section className="relative bg-[url('/benefit-bg.png')] lg:bg-cover lg:bg-center lg:bg-transparent bg-[#77CAFF24] h-fit overflow-x-hidden ">
+        <section className="relative bg-[url('/benefit-bg.png')] lg:bg-cover lg:bg-center lg:bg-transparent bg-[#77CAFF24] h-fit overflow-x-hidden overflow-y-hidden">
             <img
                 src="/blob-tear.png"
                 alt=""

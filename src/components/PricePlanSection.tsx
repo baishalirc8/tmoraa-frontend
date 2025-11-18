@@ -4,7 +4,7 @@ import GradientOutlineButton from "./GradientOutlineButton";
 
 export default function PricePlanSection() {
   return (
-    <section id="pricing" className="mt-4 lg:mt-0 mb-10 relative h-fit overflow-hidden">
+    <section className="mt-4 lg:mt-0 mb-10 relative h-fit overflow-hidden">
       <img src="/price-plan-bg.png" alt="" className="hidden lg:block absolute -top-40 -z-50 w-full object-cover" />
 
       <div data-aos="zoom-out" className="flex justify-center items-center pt-20 px-6">

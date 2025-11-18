@@ -83,6 +83,7 @@
   html {
     scroll-padding-top: 5rem;
     @apply scroll-smooth;
+    overflow-x: hidden;
   }
 
   body {

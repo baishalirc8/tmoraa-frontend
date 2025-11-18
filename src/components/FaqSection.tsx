@@ -2,7 +2,7 @@ import React from 'react'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './ui/accordion'
 export default function FaqSection() {
   return (
-    <section id='faq' className='py-16 md:py-20'>
+    <section className='py-16 md:py-20'>
       <div className='mb-10 flex justify-center items-center px-6'>
         <h2 data-aos="zoom-out" className='text-3xl md:text-5xl font-semibold text-center'>Frequently Asked Questions</h2>
       </div>

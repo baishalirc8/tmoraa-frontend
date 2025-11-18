@@ -23,7 +23,12 @@ export default function WhyYoullLoveTmoraaSection() {
               <li className="pt-2">Grow revenue while maintaining operational control</li>
             </ul>
           </div>
-          <GradientOutlineButton className="h-min w-2xs justify-self-center md:justify-self-auto">
+          <GradientOutlineButton className="h-min w-2xs justify-self-center md:justify-self-auto" onClick={() => {
+            const el = document.getElementById('contactUs');
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>
             Request a Demo
           </GradientOutlineButton>
         </div>

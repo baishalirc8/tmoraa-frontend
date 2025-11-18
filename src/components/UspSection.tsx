@@ -2,7 +2,7 @@ import FeatureCard from "./FeatureCard";
 
 export default function UspSection() {
   return (
-    <section id="features" className="my-10 md:my-16">
+    <section className="my-10 md:my-16">
       <div className="mb-10 md:mb-16 flex justify-center items-center text-center px-6">
         <h2 data-aos="zoom-out" className="text-3xl md:text-5xl text-black font-semibold">
           What Makes Us Different

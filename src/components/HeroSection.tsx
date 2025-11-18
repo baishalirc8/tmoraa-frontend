@@ -2,7 +2,7 @@ import GradientButton from './GradientButton'
 
 export default function HeroSection() {
     return (
-        <section id='home' className="relative min-h-screen bg-[url('/hero-bg.png')] bg-size-[150%_150%] bg-top bg-no-repeat -mt-[72px]">
+        <section className="relative min-h-screen bg-[url('/hero-bg.png')] bg-size-[150%_150%] bg-top bg-no-repeat -mt-[72px]">
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] justify-items-center items-center gap-12 lg:gap-0 min-h-screen pt-[72px] px-6 lg:px-0 pb-12 lg:pb-0">
 
                 <div className='w-full text-center lg:text-left lg:justify-self-start lg:ml-28 mt-10 lg:mt-0'>
