@@ -22,7 +22,16 @@ export default function HeroSection() {
                         Request a Demo
                     </GradientButton>
                 </div>
-                <div data-aos="zoom-in" className="bg-background rounded-2xl w-full max-w-xl lg:max-w-none h-[50vh] sm:h-[400px] lg:w-[836px] lg:h-[673px] lg:justify-self-center mx-auto lg:mx-0">
+                <div
+                    data-aos="zoom-in"
+                    className="bg-background rounded-2xl w-full max-w-xl lg:max-w-none h-[50vh] sm:h-[400px] lg:w-[836px] lg:h-[673px] lg:justify-self-center mx-auto lg:mx-0 overflow-hidden"
+                >
+                    <video
+                        src="/tmoraa-video.mp4"
+                        controls
+                        playsInline
+                        className="w-full h-full object-cover"
+                    />
                 </div>
             </div>
         </section>
