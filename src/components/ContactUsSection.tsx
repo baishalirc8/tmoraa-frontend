@@ -7,6 +7,7 @@ import { toast } from "sonner";
 
 export default function ContactUsSection() {
     const [status, setStatus] = useState("");
+    const [loading, setLoading] = useState(false);
 
     return (
         <section className="relative overflow-hidden min-h-screen">
@@ -30,16 +31,42 @@ export default function ContactUsSection() {
                     </div>
 
                     <form
-                        action={async (formData) => {
+                        onSubmit={async (e) => {
+                            e.preventDefault();
+                            setLoading(true);
+
+                            const form = e.target as HTMLFormElement;
+
+                            const formData = {
+                                firstName: form.firstName.value,
+                                lastName: form.lastName.value,
+                                email: form.email.value,
+                                phone: form.phone.value,
+                                country: form.country.value,
+                                company: form.company.value,
+                                message: form.message.value,
+                            };
+
                             try {
-                                await submitContactForm(formData);
+                                const emailjs = (await import("@emailjs/browser")).default;
+
+                                await emailjs.send(
+                                    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                                    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                                    formData,
+                                    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+                                );
+
                                 toast.success("Your message has been sent!");
+                                form.reset();
                             } catch (error) {
                                 console.error(error);
                                 toast.error("Something went wrong. Please try again.");
+                            } finally {
+                                setLoading(false);
                             }
-
                         }}
+
                         className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 md:gap-y-12"
                     >
                         <input
@@ -97,9 +124,14 @@ export default function ContactUsSection() {
                         <div className="flex justify-end sm:col-span-2">
                             <button
                                 type="submit"
-                                className="hover:underline text-lg md:text-[20px] cursor-pointer"
+                                disabled={loading}
+                                className="hover:underline text-lg md:text-[20px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                             >
-                                Let's Start the Conversation →
+                                {loading ? (
+                                    <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                ) : (
+                                    "Let's Start the Conversation →"
+                                )}
                             </button>
                         </div>
 
