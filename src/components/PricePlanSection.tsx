@@ -20,7 +20,7 @@ export default function PricePlanSection() {
       </p>
 
       <div className="flex flex-col lg:flex-row gap-6 my-10 justify-center items-center px-4">
-        <div data-aos="slide-left"><PricingCard
+        {/* <div data-aos="slide-left"><PricingCard
           planName="Command Suite Essential"
           employeesRange="Up to 0-20 employees"
           price={99}
@@ -31,11 +31,11 @@ export default function PricePlanSection() {
             "Real-time alerts",
           ]}
           isPopular={false}
-        /></div>
+        /></div> */}
 
         <div data-aos="fade-left"><PricingCard
           planName="Command Suite Professional"
-          employeesRange="Up to 20-50 employees"
+          employeesRange="Up to 0-50 employees"
           price={199}
           features={[
             "All dashboard features",
