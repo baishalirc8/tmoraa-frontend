@@ -85,6 +85,7 @@
     scroll-padding-top: 5rem;
     @apply scroll-smooth;
     overflow-x: hidden;
+    font-size: 18px;
   }
 
   body {

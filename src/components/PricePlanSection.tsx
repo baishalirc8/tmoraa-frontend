@@ -35,7 +35,7 @@ export default function PricePlanSection() {
 
         <div data-aos="fade-left"><PricingCard
           planName="Command Suite Professional"
-          employeesRange="Up to 0-50 employees"
+          employeesRange="From 0 to 50 employees"
           price={199}
           features={[
             "All dashboard features",
@@ -48,7 +48,7 @@ export default function PricePlanSection() {
 
         <div data-aos="zoom-in"><PricingCard
           planName="Command Suite Enterprise"
-          employeesRange="Up to 50-100 employees"
+          employeesRange="From 51 to 100 employees"
           price={299}
           features={[
             "All dashboard features",
@@ -61,7 +61,7 @@ export default function PricePlanSection() {
 
         <div data-aos="fade-right"><PricingCard
           planName="Command Suite Executive"
-          employeesRange="Up to 100-150 employees"
+          employeesRange="From 101 to 150 employees"
           price={399}
           features={[
             "All dashboard features",
