@@ -91,7 +91,7 @@ export default function CountdownSection() {
 
                     <div className="text-center">
                         <p className="text-sm md:text-base lg:text-lg px-0 md:px-10 lg:px-20">
-                            January 5th, 2026 - Be among the first to experience Tmoraa
+                            January 19th, 2026 - Be among the first to experience Tmoraa
                         </p>
                     </div>
 
