@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog'
 import { toast } from 'sonner'
+import { useRouter } from 'next/navigation'
 
 
 const MenuIcon = () => (
@@ -51,7 +52,7 @@ const XIcon = () => (
 
 export default function Appbar({ activeSection }: { activeSection: string }) {
     const [isOpen, setIsOpen] = useState(false);
-
+    const router = useRouter();
     return (
         <nav data-aos="fade-down" className='sticky top-0 z-50 bg-white/2 backdrop-blur-md relative'>
             <div className="flex items-center justify-between py-4 px-6">
@@ -168,35 +169,13 @@ export default function Appbar({ activeSection }: { activeSection: string }) {
                 <div className="hidden md:flex items-center space-x-4">
                     <AlertDialog>
                         <AlertDialogTrigger asChild>
-                            <GradientOutlineButton>Login</GradientOutlineButton>
+                            <GradientOutlineButton onClick={() =>router.push("https://demo.ikon.keross.com/tmoraa/login")}>Login</GradientOutlineButton>
                         </AlertDialogTrigger>
-                        <AlertDialogContent className='max-w-lg!'>
-                            <AlertDialogHeader>
-                                <AlertDialogTitle>Coming Soon</AlertDialogTitle>
-                                <AlertDialogDescription>
-                                    We are putting the finishing touches on the web application. We will be live very soon.
-                                </AlertDialogDescription>
-                            </AlertDialogHeader>
-                            <AlertDialogFooter>
-                                <AlertDialogCancel className='cursor-pointer px-6 py-3.5 font-medium text-white hover:text-white rounded-full bg-linear-to-r from-[#29b47d] to-[#0a80d2] hover:from-[#0a80d2] hover:to-[#29b47d]'>Close</AlertDialogCancel>
-                            </AlertDialogFooter>
-                        </AlertDialogContent>
                     </AlertDialog>
                     <AlertDialog>
                         <AlertDialogTrigger asChild>
-                            <GradientButton>Sign Up</GradientButton>
+                            <GradientButton onClick={() =>router.push("https://demo.ikon.keross.com/tmoraa/signup")}>Sign Up</GradientButton>
                         </AlertDialogTrigger>
-                        <AlertDialogContent className='max-w-lg!'>
-                            <AlertDialogHeader>
-                                <AlertDialogTitle>Coming Soon</AlertDialogTitle>
-                                <AlertDialogDescription>
-                                    We are putting the finishing touches on the web application. We will be live very soon.
-                                </AlertDialogDescription>
-                            </AlertDialogHeader>
-                            <AlertDialogFooter>
-                                <AlertDialogCancel className='cursor-pointer px-6 py-3.5 font-medium text-white hover:text-white rounded-full bg-linear-to-r from-[#29b47d] to-[#0a80d2] hover:from-[#0a80d2] hover:to-[#29b47d]'>Close</AlertDialogCancel>
-                            </AlertDialogFooter>
-                        </AlertDialogContent>
                     </AlertDialog>
                 </div>
 
@@ -232,21 +211,9 @@ export default function Appbar({ activeSection }: { activeSection: string }) {
 
                 <div className="flex flex-col items-center space-y-4 p-4 border-t border-gray-200/50">
                     <GradientOutlineButton className="w-full justify-center" onClick={() =>
-                        toast("Coming Soon", {
-                            description: "We are putting the finishing touches on the web application. We will be live very soon.",
-                            position: "top-center",
-                            className: "max-w-screen text-base!",
-                            richColors: true,
-                        })
+                        router.push("https://demo.ikon.keross.com/tmoraa/login")
                     } >Login</GradientOutlineButton>
-                    <GradientButton className="w-full justify-center" onClick={() =>
-                        toast("Coming Soon", {
-                            description: "We are putting the finishing touches on the web application. We will be live very soon.",
-                            position: "top-center",
-                            className: "max-w-screen text-base!",
-                            richColors: true,
-                        })
-                    }> Sign up</GradientButton>
+                    <GradientButton className="w-full justify-center" onClick={() =>router.push("https://demo.ikon.keross.com/tmoraa/signup")}>Sign Up</GradientButton>
                 </div>
             </div>
         </nav >

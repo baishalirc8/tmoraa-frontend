@@ -1,6 +1,7 @@
 import React from "react";
 import GradientButton from "./GradientButton";
 import GradientOutlineButton from "./GradientOutlineButton";
+import { useRouter } from "next/navigation";
 
 interface PricingCardProps {
     planName: string;
@@ -17,6 +18,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
     features,
     isPopular = false,
 }) => {
+    const router = useRouter();
     return (
         <div className={`relative bg-background rounded-2xl shadow-md p-0.5 ${isPopular ? 'bg-linear-to-r from-[#29b47d] to-[#0a80d2]' : 'border border-gray-200'}  w-full max-w-[432px] hover:shadow-lg text-center transition-shadow duration-300`} >
             <div className="bg-background rounded-2xl p-8">
@@ -45,8 +47,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 </ul>
 
                 {isPopular ?
-                    <GradientButton className={` ${isPopular ? 'mt-16 mb-4' : 'mt-8 mb-2'} px-20!`}>Choose Plan</GradientButton>
-                    : <GradientOutlineButton className={` ${isPopular ? 'mt-16 mb-4' : 'mt-8 mb-2'}`}>Choose Plan</GradientOutlineButton>}
+                    <GradientButton className={` ${isPopular ? 'mt-16 mb-4' : 'mt-8 mb-2'} px-20!`} onClick={() =>router.push("https://demo.ikon.keross.com/tmoraa/login")}>Choose Plan</GradientButton>
+                    : <GradientOutlineButton className={` ${isPopular ? 'mt-16 mb-4' : 'mt-8 mb-2'}`} onClick={() =>router.push("https://demo.ikon.keross.com/tmoraa/login")}>Choose Plan</GradientOutlineButton>}
             </div>
         </div >
     );
